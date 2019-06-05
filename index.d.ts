@@ -1,16 +1,16 @@
-export function diff (originalObj: any, updatedObj: any): any
+export function diff (originalObj: object, updatedObj: object): object
 
-export function addedDiff (originalObj: any, updatedObj: any): any
+export function addedDiff (originalObj: object, updatedObj: object): object
 
-export function deletedDiff (originalObj: any, updatedObj: any): any
+export function deletedDiff (originalObj: object, updatedObj: object): object
 
-export function updatedDiff (originalObj: any, updatedObj: any): any
+export function updatedDiff (originalObj: object, updatedObj: object): object
 
 export interface Diff
 {
-  added?:any | undefined
-  modified?:any | undefined
-  removed?:any | undefined
+  added?: object | undefined
+  modified?: object | undefined
+  removed?: object | undefined
 }
 
-export function detailedDiff (originalObj: any, updatedObj: any): Diff
+export function detailedDiff (originalObj: object, updatedObj: object): Diff
