@@ -14,3 +14,7 @@ export interface Diff
 }
 
 export function detailedDiff (originalObj: object, updatedObj: object): Diff
+
+export type ModificationType = 'added' | 'modified' | 'removed'
+
+export function getPathStatus( detailedDiff:Diff, path:string ): ModificationType | undefined
